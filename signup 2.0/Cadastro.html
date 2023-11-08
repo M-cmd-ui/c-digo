@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="./css/Cadastro.css">
+    
+    <title>Cadastro</title>
+
+</head>
+<body>
+ 
+
+    <div class='container'>
+        <div class='card'>
+          <h1> inscreva-se </h1>
+          
+          <div id='msgError'></div>
+          <div id='msgSuccess'></div>
+          
+                  <div class="label-float">
+                     <input type="text" id="nome" placeholder=" " required>
+                     <label id="labelNome" for="nome">Nome</label>
+                  </div>
+
+                  <div class="label-float">
+                     <input type="text" id="Sobrenome" placeholder=" " required>
+                     <label id="labelSobrenome" for="Sobrenome">Sobrenome</label>
+                  </div>
+
+                  <div class="label-float">
+                     <input type="text" id="Email" placeholder=" " required>
+                     <label id="labelEmail" for="Email">Email  </label> 
+                  </div>
+
+                    <div >
+                     
+                  <label>Sexo?</label><br><br>
+                     <label>
+
+                        <input type="radio" name="devweb" value="Feminino">Feminino
+                     </label>
+
+                     <label>
+                        <input type="radio" name="devweb" value="Masculino">Masculino
+                     </label>
+                  </div>
+
+                  <div class="inputBox"><br><br>
+                  
+                     <label for="data_nascimento">Ano de Nascimento</label>
+                     <input type="date" nome="data_nascimento" id="data_nascimento" class="inputUser" required>
+                     
+
+                  </div>
+      
+                  <div class="label-float">
+                     <input type="text" id="usuario" placeholder=" " required>
+                     <label id="labelUsuario" for="usuario">Usuário</label>
+                  </div>
+                  
+                  <div class="label-float">
+                     <input type="password" id="senha" placeholder=" " required>
+                     <label id="labelSenha" for="senha">Senha</label>
+                     <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                     
+                  </div>
+      
+                  <div class="label-float">
+                     <input type="password" id="confirmSenha" placeholder=" " required>
+                     <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha</label>
+                     <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+                  </div>
+                  
+                  <div class='justify-center'>
+                     <button onclick='cadastrar()'>Cadastrar</button>
+                  </div>
+                  <div class='justify-center'>
+                     <button onclick='voltar'> <a class="btn-link" href="Inicial.html">Voltar</a></button>
+                  </div>
+      
+          
+        </div>
+        </div>
+        <script src="./js/index.js">
+      
+            
+        </script>
+       
+       
+     
+</body>
+</html>
